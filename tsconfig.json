@@ -1,0 +1,10 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "context.pinia": {
+    "types": ["@pinia/nuxt"]
+  },
+  "compilerOptions": {
+    "allowJs": true
+  }
+}

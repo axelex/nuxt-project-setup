@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//Font Import
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+//set font globally
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+}
+:root {
+  //Multiselect plugin Root Override
+  --ms-tag-bg: #e8eaf7;
+  --ms-tag-color: #5850ec;
+  --ms-placeholder-color: #99a1ad;
+  --ms-font-size: 0.9rem;
+  --ms-group-label-bg-selected: #e5edff;
+  --ms-group-label-color-selected: #5850ec;
+  --ms-group-label-bg-selected-pointed: #e5edff;
+  --ms-group-label-color-selected-pointed: #5850ec;
+  --ms-option-font-size: 0.8rem;
+  .multiselect-tags-search,
+  .multiselect-search {
+    box-shadow: none !important;
+    outline: none;
+  }
+  .is-active {
+    box-shadow: -1px 0px 10px 0px rgba(88, 80, 236, 0.24) !important;
+  }
+}
+//apply this class where ever we use Multi tag selector
+.dark__multiselect {
+  @apply bg-white dark:bg-transparent  dark:border-gray-600;
+  .multiselect-tags-search,
+  .multiselect-search {
+    @apply bg-white dark:bg-transparent;
+  }
+}
+
+//datepicker css
+.days-of-week {
+  margin-bottom: 10px;
+  width: 100%;
+  place-items: center;
+}
+.datepicker-cell {
+  margin-bottom: 18px;
+}
+.today-btn {
+  display: none;
+}
+.clear-btn {
+  width: 100%;
+}
+
+// ag-grid dark styles
+
+.ag-theme-alpine-dark {
+  --ag-header-background-color: #374151 !important;
+  --ag-background-color: #1f2937 !important;
+  --ag-odd-row-background-color: #111827 !important;
+}
+.ag-root-wrapper {
+  border-radius: 10px !important;
+}
+
+//Toast notification styles
+.Toastify__toast-container {
+  width: auto !important;
+}

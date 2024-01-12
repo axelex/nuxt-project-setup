@@ -1,0 +1,39 @@
+{
+ "rules" : {
+ "login": {
+    "messagesKey": "loginForm",
+    "fields": {
+      "username": {
+        "rules": ["required"]
+      },
+      "password": {
+        "rules": ["required"]
+      }
+    }
+  },
+  "asset": {
+    "messagesKey": "assetForm",
+    "fields": {
+      "title": {
+        "rules": ["required"]
+      }
+    }
+  },
+  "category": {
+    "messagesKey": "categoriesForm",
+    "fields": {
+      "name": {
+        "rules": ["required"]
+      }
+    }
+  },
+  "blogSites": {
+    "messagesKey": "blogSitesForm",
+    "fields": {
+      "name": {
+        "rules": ["required"]
+      }
+    }
+  }
+}
+}

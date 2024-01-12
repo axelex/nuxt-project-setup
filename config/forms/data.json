@@ -1,0 +1,28 @@
+{
+  "validation": {
+    "messages": {
+      "loginForm": {
+        "username": {
+          "required": "Username is required!"
+        },"password": {
+          "required": "Password is required!"
+        }
+      },
+      "assetForm": {
+        "title": {
+          "required": "Title is required!"
+        }
+      },
+      "blogSitesForm": {
+        "name": {
+          "required": "Name is required!"
+        }
+      },
+      "categoriesForm": {
+        "name": {
+          "required": "Name is required!"
+        }
+      }
+    }
+  }
+}
